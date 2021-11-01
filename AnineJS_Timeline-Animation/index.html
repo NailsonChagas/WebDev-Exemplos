@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="eng-us">
+    <head>
+        <meta charset="utf-8">
+        <title>Anime Js - Timeline Animation</title>
+        <link rel="stylesheet" type="text/css" href="CSS/style.css">
+    </head>
+
+    <body>
+
+        <section>
+            <img src="IMG/stars.png" id="stars">
+            <img src="IMG/moon.png" id="moon">
+            <img src="IMG/mountains_behind.png" id="mountains_behind">
+
+            <h2 id="text">Anime<span>JS</span></h2>
+            <a href="#" id="btn">Play</a>
+
+            <img src="IMG/mountains_front.png" id="mountains_front">
+        </section>
+
+        <script src="JS/anime.min.js"></script>
+
+        <script>
+
+            let animation = anime.timeline({
+                autoplay: false
+            });
+
+            animation.add({
+                targets: '#btn',
+                top: '3000px',
+                duration: 500,
+                easing: 'easeInOutSine'
+            }).add({
+                targets: '#stars',
+                top: '0px',
+                duration: 500,
+                easing: 'easeInOutSine'
+            }).add({
+                targets: '#mountains_behind',
+                bottom: '0px',
+                duration: 500,
+                easing: 'easeInOutSine'
+            }).add({
+                targets: '#moon',
+                top: '0px',
+                duration: 500,
+                easing: 'easeInOutBack'
+            }).add({
+                targets: '#mountains_front',
+                bottom: '0px',
+                duration: 500,
+                easing: 'easeInOutSine'
+            }).add({
+                targets: '#text',
+                duration: 500,
+                marginRight: 0,
+                easing: 'easeInOutBack'
+            }).add({
+                targets: '#btn',
+                top: '50%',
+                duration: 1000,
+                easing: 'easeInOutBack'
+            });
+
+            document.querySelector('#btn').onclick = animation.play;
+
+        </script>
+
+    </body>
+</html>

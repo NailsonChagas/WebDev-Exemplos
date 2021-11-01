@@ -1,0 +1,191 @@
+#home, html, body{
+    height: 100%;
+}
+
+body{
+    background: url(../img/capa.png), url(../img/ruido.png), linear-gradient(50deg, #ff4169, #7c26f8);
+    background-attachment: fixed;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+nav.navbar-transparente{
+    padding: 15px 0px;
+    background: rgba(0, 0, 0, 0.6);
+}
+
+.navbar-light .navbar-nav .nav-link.meu_link{
+    color: white;
+}
+.navbar-light .navbar-nav .nav-link.meu_link:hover{
+    color: #9bf0e1;
+}
+
+.navbar-light .navbar-toggler.meu_toggler {
+    color: rgba(0,0,0,.5);
+    border-color: rgba(255, 255, 255, 0.5);
+}
+
+.divisor{
+    width: 1px;
+    background: white;
+    margin: 12px 15px;
+}
+
+.capa{
+    text-align: center;
+}
+
+.titulo{
+    font-weight: 900;
+    letter-spacing: -0.05em;
+    margin-bottom: 50px;
+    color: white;
+}
+
+#servicos{
+    background: white;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.albuns{
+    padding: 15px 0px;
+}
+
+.rotacionar{
+    -ms-transform: rotate(30deg);
+    -webkit-transform: rotate(30deg);
+    transform: rotate(30deg);
+    padding-left: 80px;
+}
+
+#servicos h2{
+    color: #7c25f8;
+}
+
+#servicos h3{
+    color: #7c25f8;
+}
+
+#recursos{
+    color: white;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+
+#recursos h2{
+    color: white;
+}
+
+#recursos h3{
+    color: #9bf0e1;
+}
+
+h2{
+    font-size: 3em !important;
+    font-weight: 700 !important;
+    letter-spacing: -0.04em !important;
+}
+
+h3{
+    font-size: 2em !important;
+    font-weight: 700 !important;
+    letter-spacing: -0.04em !important;
+}
+
+@media (max-width: 575.98px) {
+    .btn-custom{
+        margin: 10px 15px;
+    }
+}
+
+@media (min-width: 576px) and (max-width: 767.98px) {
+    .titulo{
+        font-size: 3em;
+    }
+    .btn-custom{
+        margin: 10px 15px;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+    .titulo{
+        font-size: 4em;
+    }
+}
+
+@media (min-width: 992px) and (max-width: 1999.98px) {
+    .titulo{
+        font-size: 5em;
+    }
+}
+
+@media (min-width: 1200px) {
+    .titulo{
+        font-size: 6em;
+    }
+}
+
+.btn.btn-custom{
+    color: white;
+    border-radius: 400px;
+    -webkit-border-radius: 500px;
+    -moz-border-radius: 500px;
+    text-transform: uppercase;
+    transition: background 0.4s, color 0.4s;
+    padding: 10px 15px;
+}
+
+.btn-roxo{
+    background: #7c25f8;
+}
+
+.btn-roxo:hover{
+    background: #6207e3;
+    color: white;
+}
+
+.btn-custom.btn-branco{
+    border: 2px solid white;
+}
+
+.btn-branco:hover{
+    background: white;
+    color: black;
+}
+
+footer{
+    background: black;
+    padding: 50px 0px 50px 0;
+    position: relative;
+}
+
+footer h4{
+    color: #919496;
+    font-size: 0.8em;
+    text-transform: uppercase;
+}
+
+footer .navbar-nav a{
+    color: white;
+    font-size: 0.8em;
+}
+
+footer .navbar-nav a:hover{
+    color: #9bf0e1;
+    text-decoration: none;
+}
+
+footer ul{
+    list-style: none;
+}
+
+footer ul li{
+    float: right;
+    margin: 0 5px;
+}
+
+.carousel-control-next, .carousel-control-prev{
+    width: 5% !important;
+}

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="eng-us">
+    <head>
+        <meta charset="utf-8">
+        <title>Responsive Sign in and up form</title>
+        <link rel="stylesheet" type="text/css" href="CSS/style.css">
+    </head>
+
+    <body>
+
+        <section>
+            <div class="container">
+                <div class="user signinBx">
+                    <div class="imgBx">
+                        <img src="IMG/door.jpg" width="400px" height="500px">
+                    </div>
+                    <div class="formBx">
+                        <form>
+                            <h2>Sign In</h2>
+                            <input type="text" placeholder="Username">
+                            <input type="password" placeholder="Password">
+                            <input type="submit" value="Login">
+                            <p class="signup">don't have an account?<a href="#" onclick="toggleForm()">Sign Up</a></p>
+                        </form>
+                    </div>
+                </div>
+
+                <div class="user signupBx">
+                    
+                    <div class="formBx">
+                        <form>
+                            <h2>Create an account</h2>
+                            <input type="text" placeholder="Username">
+                            <input type="email" placeholder="Email Address">
+                            <input type="password" placeholder="Create Password">
+                            <input type="password" placeholder="Confirm Password">
+                            <input type="submit" value="Sign Up">
+                            <p class="signup">Already have an account?<a href="#" onclick="toggleForm()">Sign In</a></p>
+                        </form>
+                    </div>
+
+                    <div class="imgBx">
+                        <img src="IMG/keys.jpg" width="400px" height="500px">
+                    </div>
+
+                </div>
+            </div>
+        </section>
+        
+        <script src="JS/script.js"></script>
+    </body>
+</html>
