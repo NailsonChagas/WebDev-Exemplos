@@ -1,5 +1,3 @@
-import grid from './modules/grid.js';
-
 grid.init();
 
 document.addEventListener('keyup', function(e){

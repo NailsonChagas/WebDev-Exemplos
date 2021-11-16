@@ -1,5 +1,3 @@
-import grid from "./grid.js";
-
 const number = {
     numbers: [],
     getElements: function(){
@@ -66,5 +64,3 @@ const number = {
         }
     }
 }
-
-export default number;

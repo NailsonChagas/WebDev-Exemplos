@@ -1,5 +1,3 @@
-import number from './number.js';
-
 const grid = {
     gridElement: document.getElementsByClassName("grid")[0],
     cells: [],
@@ -115,5 +113,3 @@ const grid = {
         }, 500)
     }
 }
-
-export default grid;
