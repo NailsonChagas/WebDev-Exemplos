@@ -1,0 +1,100 @@
+body, html {
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#pontos {
+    font-size: large;
+    font-weight: bold;
+    position: absolute;
+    top: 10%;
+}
+
+.wrapper {
+    width: 70vmin;
+    height: 70vmin;
+    /*margin: 0px auto;*/
+    background-color: #AAACAB;
+}
+
+.grid {
+    width: 100%;
+    position: relative;
+}
+
+.cell {
+    width: 15vmin;
+    height: 15vmin;
+    margin: 2vmin 2vmin 0 0;
+    background-color: #C5C6BE;
+    float: left;
+}
+
+.cell:nth-child(4n+1) {
+    margin-left: 2vmin;
+}
+
+.number {
+    position: absolute;
+    height: 15vmin;
+    width: 15vmin;
+    font-size: 5vmin;
+    font-weight: bold;
+    text-align: center;
+    line-height: 15vmin;
+    color: #FFFFFF;
+    transition: all 0.3s;
+    background-color: black;
+}
+
+.number[data-value="2"] {
+    background-color: rgb(255, 0, 0);
+}
+
+.number[data-value="4"] {
+    background-color: rgb(200, 0, 0);
+}
+
+.number[data-value="8"] {
+    background-color: rgb(190, 0, 0);
+}
+
+.number[data-value="16"] {
+    background-color: rgb(150, 0, 0);
+}
+
+.number[data-value="32"] {
+    background-color: rgb(120, 0, 0);
+}
+
+.number[data-value="64"] {
+    background-color: rgb(100, 0, 0);
+}
+
+.number[data-value="128"] {
+    background-color: rgb(80, 40, 80);
+}
+
+.number[data-value="256"] {
+    background-color: rgb(80, 40, 40);
+}
+
+.number[data-value="512"] {
+    background-color: rgb(20, 0, 40);
+}
+
+.number[data-value="1024"] {
+    background-color: rgb(20, 0, 80);
+}
+
+.number[data-value="2048"] {
+    background-color: rgb(20, 0, 160);
+}
+
+.number[data-value="4096"] {
+    background-color: rgb(100, 0, 255);
+}
