@@ -1,0 +1,42 @@
+*, *::before, *::after {
+    box-sizing: border-box;/*As propriedades de largura (width) e de altura (height) incluem o tamanho padding size e a propriedade border, mas não incluem a propriedade margin.*/
+    margin: 0;
+    padding: 0;
+}
+
+/*Noite Estrelada*/
+.sky {
+    position: relative;
+    overflow: hidden;
+    width: 100vw;
+    min-height: 100vh;
+    background: linear-gradient(#0f2027, #203a43, #2c5364);
+}
+
+.star {
+    --x: 0%;
+    --y: 0%;
+    --opacity: 1;
+    --size: 1;
+    --delay: 0s;
+    --color: #fff;
+
+    position: absolute;
+    top: var(--y);
+    left: var(--x);
+    width: 2px;
+    height: 2px;
+    transform: translate(-50%, -50%) scale(var(--size));
+    animation: blink 1s ease-in-out infinite alternate;
+    animation-delay: var(--delay);
+    opacity: var(--opacity);
+    border-radius: 50%;
+    background-color: var(--color);
+    box-shadow: 0 0 8px var(--color);
+}
+
+@keyframes blink {
+    from {
+        opacity: 1;
+    }
+}
